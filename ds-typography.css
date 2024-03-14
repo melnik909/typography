@@ -72,6 +72,9 @@ h6:not([class]){
 
 a{
   color: var(--ds-typography-link-color, #5e4ef3);
+}
+
+a:not([class]){
   text-decoration: var(--ds-typography-link-text-decoration-line, underline) 
                    var(--ds-typography-link-text-decoration-thickness, 2px) 
                    var(--ds-typography-link-text-decoration-style, solid)
