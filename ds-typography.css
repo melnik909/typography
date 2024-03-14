@@ -70,11 +70,8 @@ h6:not([class]){
   font-size: var(--ds-typography-h6-font-size, 1.125rem);
 }
 
-a{
-  color: var(--ds-typography-link-color, #5e4ef3);
-}
-
 a:not([class]){
+  color: var(--ds-typography-link-color, #5e4ef3);
   text-decoration: var(--ds-typography-link-text-decoration-line, underline) 
                    var(--ds-typography-link-text-decoration-thickness, 2px) 
                    var(--ds-typography-link-text-decoration-style, solid)
