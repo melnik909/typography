@@ -1,0 +1,95 @@
+:root{
+  /*
+  - Spacing following paragraphs to at least 2 times the font size;
+  The 1.4.12 requirements from WCAG 2.2 https://www.w3.org/TR/WCAG22/#text-spacing
+  This gap should be computed taking into account the line-height
+  */
+
+  --_ds-typography-main-margin: var(--ds-typography-main-margin, 1.25em);
+}
+
+body{
+  font-family: var(--ds-typography-main-font-family, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif);
+  font-size: var(--ds-typography-main-font-size, 1rem);
+  color: var(--ds-typography-main-color, #222);
+  line-height: var(--ds-typography-main-line-height, 1.75);
+}
+
+p:not([class]){
+  margin-block: var(--ds-typography-paragraph-margin-block-start, var(--_ds-typography-main-margin)) 0;
+}
+
+:is(ul, ol):not([class]){
+  margin-block: var(--ds-typography-list-margin-block-start, var(--_ds-typography-main-margin)) 0;
+}
+
+li:not([class]):nth-child(n+2){
+  margin-block-start: var(--ds-typography-list-item-margin-block-start, .75em);
+}
+
+:is(h1, h2, h3, h4, h5, h6):not([class]){
+  /*
+    You will need to set a font family and line height sometimes 
+    because they will differ from the main text
+  */
+  margin-block: var(--ds-typography-heading-margin-block-start, 2.5em) var(--ds-typography-heading-margin-block-end, 0);
+  line-height: var(--ds-typography-heading-line-height, inherit);
+  font-family: var(--ds-typography-heading-font-family, inherit);
+}
+
+:is(h1, h2, h3, h4, h5, h6, p):not([class]):first-child,
+h1:not([class]) + h2:not([class]),
+h2:not([class]) + h3:not([class]), 
+h3:not([class]) + h4:not([class]),
+h4:not([class]) + h5:not([class]),
+h5:not([class]) + h6:not([class]){
+  margin-block-start: 0;
+}
+
+h1:not([class]){
+  font-size: var(--ds-typography-h1-font-size, 2rem);
+}
+
+h2:not([class]){
+  font-size: var(--ds-typography-h2-font-size, 1.75rem);
+}
+
+h3:not([class]){
+  font-size: var(--ds-typography-h3-font-size, 1.5rem);
+}
+
+h4:not([class]){
+  font-size: var(--ds-typography-h4-font-size, 1.375rem);
+}
+
+h5:not([class]){
+  font-size: var(--ds-typography-h5-font-size, 1.25rem);
+}
+
+h6:not([class]){
+  font-size: var(--ds-typography-h6-font-size, 1.125rem);
+}
+
+a{
+  color: var(--ds-typography-link-color, #5e4ef3);
+  text-decoration: var(--ds-typography-link-text-decoration-line, underline) 
+                   var(--ds-typography-link-text-decoration-thickness, 2px) 
+                   var(--ds-typography-link-text-decoration-style, solid)
+                   var(--ds-typography-link-text-decoration-color, currentColor);
+  text-underline-offset: var(--ds-typography-link-text-decoration-offset, 5px);
+}
+
+img{
+  display: var(--ds-typography-img-display, block);
+  max-inline-size: var(--ds-typography-img-max-width, 100%);
+}
+
+img:not([class]){
+  object-fit: var(--ds-typography-img-object-fit);
+  object-position: var(--ds-typography-img-object-position);
+  aspect-ratio: var(--ds-typography-img-aspect-ratio);
+}
+
+img:not([class]:first-child){
+  margin-block-start: var(--ds-typography-img-margin-block-start, var(--_ds-typography-main-margin))
+}

@@ -1,0 +1,8 @@
+*:not(li) > ul:not([class]):first-child,
+*:not(li) > ol:not([class]):first-child{
+  /*
+  When you import the nested list addon this at-rule
+  shouldn't match to nested lists. So I use the * selector to reach that.
+  */
+  margin-block-start: 0;
+}
