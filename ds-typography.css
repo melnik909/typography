@@ -78,18 +78,3 @@ a:not([class]){
                    var(--ds-typography-link-text-decoration-color, currentColor);
   text-underline-offset: var(--ds-typography-link-text-decoration-offset, 5px);
 }
-
-img{
-  display: var(--ds-typography-img-display, block);
-  max-inline-size: var(--ds-typography-img-max-width, 100%);
-}
-
-img:not([class]){
-  object-fit: var(--ds-typography-img-object-fit);
-  object-position: var(--ds-typography-img-object-position);
-  aspect-ratio: var(--ds-typography-img-aspect-ratio);
-}
-
-img:not([class]:first-child){
-  margin-block-start: var(--ds-typography-img-margin-block-start, var(--_ds-typography-main-margin))
-}
