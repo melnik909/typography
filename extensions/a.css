@@ -1,0 +1,6 @@
+a:not([class]) {
+  --_ds-typography-link-box-decoration-break: var(--ds-typography-link-box-decoration-break);
+  
+  -webkit-box-decoration-break: var(--_ds-typography-link-box-decoration-break);
+  box-decoration-break: var(--_ds-typography-link-box-decoration-break);
+}
