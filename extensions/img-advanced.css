@@ -1,0 +1,4 @@
+img:not([class]){
+  object-fit: var(--ds-typography-img-object-fit);
+  object-position: var(--ds-typography-img-object-position);
+}
