@@ -1,4 +1,4 @@
-:root{
+:root {
   /*
   - Spacing following paragraphs to at least 2 times the font size;
   The 1.4.12 requirements from WCAG 2.2 https://www.w3.org/TR/WCAG22/#text-spacing
@@ -8,26 +8,26 @@
   --_ds-typography-main-margin: var(--ds-typography-main-margin, 1.25em);
 }
 
-body{
+body {
   font-family: var(--ds-typography-main-font-family, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif);
   font-size: var(--ds-typography-main-font-size, 1rem);
   color: var(--ds-typography-main-color, #222);
   line-height: var(--ds-typography-main-line-height, 1.75);
 }
 
-p:not([class]){
+p:not([class]) {
   margin-block: var(--ds-typography-paragraph-margin-block-start, var(--_ds-typography-main-margin)) 0;
 }
 
-:is(ul, ol):not([class]){
+:is(ul, ol):not([class]) {
   margin-block: var(--ds-typography-list-margin-block-start, var(--_ds-typography-main-margin)) 0;
 }
 
-li:not([class]):nth-child(n+2){
+li:not([class]):nth-child(n+2) {
   margin-block-start: var(--ds-typography-list-item-margin-block-start, .75em);
 }
 
-:is(h1, h2, h3, h4, h5, h6):not([class]){
+:is(h1, h2, h3, h4, h5, h6):not([class]) {
   /*
     You will need to set a font family and line height sometimes 
     because they will differ from the main text
@@ -42,35 +42,35 @@ h1:not([class]) + h2:not([class]),
 h2:not([class]) + h3:not([class]), 
 h3:not([class]) + h4:not([class]),
 h4:not([class]) + h5:not([class]),
-h5:not([class]) + h6:not([class]){
+h5:not([class]) + h6:not([class]) {
   margin-block-start: 0;
 }
 
-h1:not([class]){
+h1:not([class]) {
   font-size: var(--ds-typography-h1-font-size, 2rem);
 }
 
-h2:not([class]){
+h2:not([class]) {
   font-size: var(--ds-typography-h2-font-size, 1.75rem);
 }
 
-h3:not([class]){
+h3:not([class]) {
   font-size: var(--ds-typography-h3-font-size, 1.5rem);
 }
 
-h4:not([class]){
+h4:not([class]) {
   font-size: var(--ds-typography-h4-font-size, 1.375rem);
 }
 
-h5:not([class]){
+h5:not([class]) {
   font-size: var(--ds-typography-h5-font-size, 1.25rem);
 }
 
-h6:not([class]){
+h6:not([class]) {
   font-size: var(--ds-typography-h6-font-size, 1.125rem);
 }
 
-a:not([class]){
+a:not([class]) {
   color: var(--ds-typography-link-color, #5e4ef3);
   text-decoration: var(--ds-typography-link-text-decoration-line, underline) 
                    var(--ds-typography-link-text-decoration-thickness, 2px) 
