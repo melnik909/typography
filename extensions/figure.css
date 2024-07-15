@@ -1,9 +1,8 @@
-figure:not([class]){
-	max-inline-size: var(--ds-typography-figure-max-inline-size, 100%);
-	margin: var(--ds-typography-figure-margin, 
-						var(--ds-typography-figure-margin-block-start, var(--ds-typography-figure-margin-block, var(--_ds-typography-main-margin)))
-						var(--ds-typography-figure-margin-inline-end, var(--ds-typography-figure-margin-inline, 0))
-						var(--ds-typography-figure-margin-block-end, var(--ds-typography-figure-margin-block, var(--_ds-typography-main-margin)))
-						var(--ds-typography-figure-margin-inline-start, var(--ds-typography-figure-margin-inline, 0))
-					)
+figure:not([class]) {
+  max-inline-size: var(--ds-typography-figure-max-inline-size, 100%);
+  margin: var(--ds-typography-figure-margin, 
+          var(--ds-typography-figure-margin-block-start, var(--ds-typography-figure-margin-block, var(--_ds-typography-main-margin)))
+          var(--ds-typography-figure-margin-inline-end, var(--ds-typography-figure-margin-inline, 0))
+          var(--ds-typography-figure-margin-block-end, var(--ds-typography-figure-margin-block, var(--_ds-typography-main-margin)))
+          var(--ds-typography-figure-margin-inline-start, var(--ds-typography-figure-margin-inline, 0));				)
 }
