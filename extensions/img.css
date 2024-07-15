@@ -1,4 +1,4 @@
-img{
+img {
   display: var(--ds-typography-img-display, block);
   max-inline-size: var(--ds-typography-img-max-width, 100%);
 }
