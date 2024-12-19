@@ -4,5 +4,5 @@ img {
 }
 
 img:not([class], :first-child){
-	margin-block-start: var(--ds-typography-img-margin-block-start, var(--_ds-typography-main-margin))
+  margin-block-start: var(--ds-typography-img-margin-block-start, var(--_ds-typography-main-margin))
 }
