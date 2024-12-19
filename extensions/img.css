@@ -2,3 +2,7 @@ img {
   display: var(--ds-typography-img-display, block);
   max-inline-size: var(--ds-typography-img-max-width, 100%);
 }
+
+img:not([class], :first-child){
+	margin-block-start: var(--ds-typography-img-margin-block-start, var(--_ds-typography-main-margin))
+}
