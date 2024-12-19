@@ -1,0 +1,4 @@
+
+:is(h1, h2, h3, h4, h5, h6):not([class]) + p:not([class]) {
+	margin-block-start: var(--ds-typography-heading-paragraph-gap, var(--ds-typography-paragraph-margin-block-start, var(--_ds-typography-main-margin)));
+}
