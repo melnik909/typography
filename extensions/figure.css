@@ -6,3 +6,7 @@ figure:not([class]) {
           var(--ds-typography-figure-margin-block-end, var(--ds-typography-figure-margin-block, var(--_ds-typography-main-margin)))
           var(--ds-typography-figure-margin-inline-start, var(--ds-typography-figure-margin-inline, 0));				)
 }
+
+figure:not([class]):last-child {
+	--ds-typography-figure-margin-block-end: 0;
+}
