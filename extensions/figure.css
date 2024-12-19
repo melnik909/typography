@@ -8,5 +8,5 @@ figure:not([class]) {
 }
 
 figure:not([class]):last-child {
-	--ds-typography-figure-margin-block-end: 0;
+  --ds-typography-figure-margin-block-end: 0;
 }
