@@ -1,0 +1,4 @@
+figure:not([class]) {
+	aspect-ratio: var(--ds-typography-figure-aspect-ratio);	
+	background-color: var(--ds-typography-figure-background-color);
+}
