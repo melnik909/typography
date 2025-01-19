@@ -35,6 +35,7 @@ li:not([class]):nth-child(n+2) {
   margin-block: var(--ds-typography-heading-margin-block-start, 2.5em) var(--ds-typography-heading-margin-block-end, 0);
   line-height: var(--ds-typography-heading-line-height, inherit);
   font-family: var(--ds-typography-heading-font-family, inherit);
+  text-wrap: var(--ds-typography-heading-text-wrap, balance);
 }
 
 :is(h1, h2, h3, h4, h5, h6, p):not([class]):first-child,
