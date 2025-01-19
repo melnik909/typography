@@ -118,7 +118,5 @@ I have specified the allowed values here. You should use a value that is allowed
 | --ds-typography-img-aspect-ratio | aspect-ratio |
 | --ds-typography-img-margin-block-start | margin |
 
-## Promo
-Also, this collection is created with the purpose of promoting my newsletter with CSS tips. I'm sure you find something what you don't know. Do you wanna check it? [Subscribe!](https://cssisntmagic.substack.com/) 
 ## Copyright
 The files herein are all Stas Melnikov.
